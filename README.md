@@ -9,4 +9,4 @@ This project is helpful for anyone wishing to convert an NSString to outlines an
 
 To use the app, one simply puts the appropriate information into the NSTextFields. The BarcodeView is updated upon commiting the text to any of the user items on the MainView.
 
-There is some tooltips to answer how to add a valid price extension and the general use of the buttons and fields.
+There are some tooltips to answer how to add a valid price extension and the general use of the buttons and fields.
