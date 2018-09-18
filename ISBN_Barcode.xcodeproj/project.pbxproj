@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2A214F3214F542D00839C75 /* UpcEan72.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2A214F1214F542D00839C75 /* UpcEan72.otf */; };
+		D2A214F4214F542D00839C75 /* OCRB.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2A214F2214F542D00839C75 /* OCRB.otf */; };
 		D2A7D8DF2145DF8E00D3DEAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A7D8DE2145DF8E00D3DEAB /* AppDelegate.m */; };
 		D2A7D8E22145DF8E00D3DEAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A7D8E12145DF8E00D3DEAB /* ViewController.m */; };
 		D2A7D8E42145DF9000D3DEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A7D8E32145DF9000D3DEAB /* Assets.xcassets */; };
 		D2A7D8E72145DF9000D3DEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A7D8E52145DF9000D3DEAB /* Main.storyboard */; };
 		D2A7D8EA2145DF9000D3DEAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A7D8E92145DF9000D3DEAB /* main.m */; };
+		D2A7D8F32145E50900D3DEAB /* BarcodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A7D8F22145E50900D3DEAB /* BarcodeView.m */; };
+		D2FA5419214FF07700249E2A /* ISBNBarcodeLogo.afdesign in Resources */ = {isa = PBXBuildFile; fileRef = D2FA5418214FF07700249E2A /* ISBNBarcodeLogo.afdesign */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D2A214F1214F542D00839C75 /* UpcEan72.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UpcEan72.otf; sourceTree = "<group>"; };
+		D2A214F2214F542D00839C75 /* OCRB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OCRB.otf; sourceTree = "<group>"; };
 		D2A7D8DA2145DF8E00D3DEAB /* ISBN_Barcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISBN_Barcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A7D8DD2145DF8E00D3DEAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2A7D8DE2145DF8E00D3DEAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -25,6 +31,9 @@
 		D2A7D8E82145DF9000D3DEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2A7D8E92145DF9000D3DEAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D2A7D8EB2145DF9000D3DEAB /* ISBN_Barcode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ISBN_Barcode.entitlements; sourceTree = "<group>"; };
+		D2A7D8F12145E50900D3DEAB /* BarcodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarcodeView.h; sourceTree = "<group>"; };
+		D2A7D8F22145E50900D3DEAB /* BarcodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarcodeView.m; sourceTree = "<group>"; };
+		D2FA5418214FF07700249E2A /* ISBNBarcodeLogo.afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = ISBNBarcodeLogo.afdesign; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +70,16 @@
 				D2A7D8DE2145DF8E00D3DEAB /* AppDelegate.m */,
 				D2A7D8E02145DF8E00D3DEAB /* ViewController.h */,
 				D2A7D8E12145DF8E00D3DEAB /* ViewController.m */,
+				D2A7D8F12145E50900D3DEAB /* BarcodeView.h */,
+				D2A7D8F22145E50900D3DEAB /* BarcodeView.m */,
 				D2A7D8E32145DF9000D3DEAB /* Assets.xcassets */,
 				D2A7D8E52145DF9000D3DEAB /* Main.storyboard */,
 				D2A7D8E82145DF9000D3DEAB /* Info.plist */,
 				D2A7D8E92145DF9000D3DEAB /* main.m */,
 				D2A7D8EB2145DF9000D3DEAB /* ISBN_Barcode.entitlements */,
+				D2FA5418214FF07700249E2A /* ISBNBarcodeLogo.afdesign */,
+				D2A214F2214F542D00839C75 /* OCRB.otf */,
+				D2A214F1214F542D00839C75 /* UpcEan72.otf */,
 			);
 			path = ISBN_Barcode;
 			sourceTree = "<group>";
@@ -101,6 +115,11 @@
 				TargetAttributes = {
 					D2A7D8D92145DF8E00D3DEAB = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -127,6 +146,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2A214F3214F542D00839C75 /* UpcEan72.otf in Resources */,
+				D2FA5419214FF07700249E2A /* ISBNBarcodeLogo.afdesign in Resources */,
+				D2A214F4214F542D00839C75 /* OCRB.otf in Resources */,
 				D2A7D8E42145DF9000D3DEAB /* Assets.xcassets in Resources */,
 				D2A7D8E72145DF9000D3DEAB /* Main.storyboard in Resources */,
 			);
@@ -142,6 +164,7 @@
 				D2A7D8E22145DF8E00D3DEAB /* ViewController.m in Sources */,
 				D2A7D8EA2145DF9000D3DEAB /* main.m in Sources */,
 				D2A7D8DF2145DF8E00D3DEAB /* AppDelegate.m in Sources */,
+				D2A7D8F32145E50900D3DEAB /* BarcodeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +295,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ISBN_Barcode/ISBN_Barcode.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ISBN_Barcode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -282,6 +305,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nutznboltzllc.ISBN-Barcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -289,9 +313,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ISBN_Barcode/ISBN_Barcode.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ISBN_Barcode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +323,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nutznboltzllc.ISBN-Barcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
