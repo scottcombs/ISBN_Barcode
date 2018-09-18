@@ -1,5 +1,5 @@
 # ISBN_Barcode
-An EAN-13 barcode generator that saves barcode as vector graphic.
+An EAN-13 barcode generator that saves barcode as a vector graphic in pdf format.
 
 Years ago, my daughter and I made this project in QT. Now, it doesn't compile without extensive recoding. Since it had to be done I decided to rewrite it in Cocoa.
 
